@@ -1,13 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "mark-medium";
+  src: url("/src/assets/font/mark_med.otf");
+}
+
+@font-face {
+  font-family: "valorant";
+  src: url("/src/assets/font/valorant.ttf");
+}
+
+@font-face {
+  font-family: "druk-wide";
+  src: url("/src/assets/font/druk_wide.ttf");
+}
+
+@layer components {
+  .color-red-1 {
+    color: #fa4454;
+  }
+  .color-red-2 {
+    color: #dc3d4b;
+  }
+  .color-dark {
+    color: #042e27;
+  }
+  .color-orange {
+    color: #b78460;
+  }
+  .color-pink {
+    color: #b38c8f;
+  }
+  .color-purple {
+    color: #364966;
+  }
+  .bg-red-1 {
+    background-color: #fa4454;
+  }
+  .bg-red-2 {
+    background-color: #dc3d4b;
+  }
+  .bg-dark {
+    --tw-bg-opacity: 1;
+    background-color: rgba(4 46 39 / var(--tw-bg-opacity));
+  }
+  .bg-orange {
+    background-color: #b78460;
+  }
+  .bg-pink {
+    background-color: #b38c8f;
+  }
+  .bg-purple {
+    background-color: #364966;
+  }
+  .font-mark-medium {
+    font-family: "mark-medium";
+  }
+  .font-valorant {
+    font-family: "valorant";
+  }
+  .font-druk {
+    font-family: "druk-wide";
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+video {
+  /* position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; */
+  zindex: -1;
 }
